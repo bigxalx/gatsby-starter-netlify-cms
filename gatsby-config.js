@@ -4,7 +4,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,6 +25,32 @@ module.exports = {
       options: {
         plugins: []
       }
-    }
+    },
+      {resolve: `gatsby-plugin-favicon`,
+          options: {
+              logo: './src/favicon.jpg',
+              injectHTML: true,
+              icons: {
+                  android: true,
+                  appleIcon: true,
+                  appleStartup: true,
+                  coast: false,
+                  favicons: true,
+                  firefox: true,
+                  twitter: false,
+                  yandex: false,
+                  windows: false
+              }
+          }
+      },
+      {
+          resolve: `gatsby-plugin-google-fonts`,
+          options: {
+              fonts: [
+                  `Montserrat\:300,900`, // you can also specify font weights and styles
+                  `Nunito Sans\:400`
+              ]
+          }
+      }
   ]
 };

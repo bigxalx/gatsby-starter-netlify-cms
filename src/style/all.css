@@ -1,0 +1,111 @@
+
+
+.container {
+    position: relative;
+    z-index: 200;
+    display: block;
+    top: 100vh;
+    background-color: white;
+}
+
+.menu {
+    position: fixed;
+    text-align: center;
+    /*display: flex;*/
+    width: 100%;
+    /*left: 0px;*/
+    vertical-align: middle;
+    height: 100vh;
+    /*top: 50vh;*/
+    /*margin-top: -20vh;*/
+    margin-left: 0;
+    /*margin-top: -16px;*/
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.videoBackground {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+}
+
+.menu video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    /*background: url('../video/tribe_background.jpg') no-repeat;*/
+    background-size: cover;
+}
+
+
+
+.menu .logo{
+    /*display: flex;*/
+    width: 50%;
+    min-width: 50px;
+    max-width: 300px;
+
+}
+
+.down-arrow {
+    z-index: 1;
+    display: block;
+    position:  fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 30px;
+    /*  margin-top: 10vh; */
+    animation: MoveUpDown 4s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.slogan {
+    position: absolute;
+    font-family: 'Montserrat';
+    letter-spacing: 4.2px;
+    font-weight: 300;
+    color: white;
+
+    text-transform: uppercase;
+    /*font-size: 1.9vw;*/
+    font-size: 20px;
+    width: 90%;
+    top: 75vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+
+@keyframes MoveUpDown {
+    0% {
+        bottom: 25px;
+    }
+    50% {
+        bottom: 15px;
+    }
+    100% {
+        bottom: 25px;
+    }
+}
