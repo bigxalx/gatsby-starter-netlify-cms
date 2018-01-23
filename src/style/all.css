@@ -1,11 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 
+}
 
 .container {
     position: relative;
     z-index: 200;
     display: block;
+    /*top: calc(100vh - 44px);*/
     top: 100vh;
     background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .menu {
@@ -14,8 +24,6 @@
     /*display: flex;*/
     width: 100%;
     /*left: 0px;*/
-    vertical-align: middle;
-    height: 100vh;
     /*top: 50vh;*/
     /*margin-top: -20vh;*/
     margin-left: 0;
@@ -31,8 +39,9 @@
     justify-content: center;
     vertical-align: middle;
     text-align: center;
-    background-color: rgba(0,0,0,0.5);
+    /*background-color: rgba(0,0,0,0.25);*/
     width: 100%;
+    /*height: calc(100vh - 44px);*/
     height: 100vh;
     margin: 0px;
     padding: 0px;
@@ -41,10 +50,12 @@
 
 .menu video {
     position: fixed;
+    /*top: calc(50% - 22px);*/
     top: 50%;
     left: 50%;
     min-width: 100%;
-    min-height: 100%;
+    /*min-height: calc(100vh - 44px);*/
+    min-height: 100vh;
     width: auto;
     height: auto;
     z-index: -100;
@@ -58,11 +69,12 @@
 
 
 
-.menu .logo{
+.logo{
     /*display: flex;*/
     width: 50%;
     min-width: 50px;
-    max-width: 300px;
+    max-width: 350px;
+    filter: drop-shadow(0 0 8px black);
 
 }
 
@@ -74,10 +86,12 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    bottom: 30px;
+    bottom: 50px;
     /*  margin-top: 10vh; */
     animation: MoveUpDown 4s ease-in-out infinite;
     cursor: pointer;
+    filter: drop-shadow(0 0 8px black);
+
 }
 
 .slogan {
@@ -86,26 +100,84 @@
     letter-spacing: 4.2px;
     font-weight: 300;
     color: white;
-
+    filter: drop-shadow(0 0 8px black);
     text-transform: uppercase;
     /*font-size: 1.9vw;*/
     font-size: 20px;
     width: 90%;
     top: 75vh;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
 }
+
+.navbar {
+    background-color: rgba(0,0,0,1);
+    top: 0;
+    position: sticky;
+    font-family: 'Montserrat';
+    letter-spacing: 4.2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    /*font-size: 1.9vw;*/
+    font-size: 20px;
+    text-align: center;
+}
+.navbar-start {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.navbar-item {
+    list-style: none;
+}
+.navbar-item a {
+    display: flex;
+    display: -webkit-flex;
+
+    height: 44px;
+    width: 25vw;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+
+}
+.navbar-item a:hover {
+    color: black;
+}
+
 
 
 @keyframes MoveUpDown {
     0% {
-        bottom: 25px;
+        bottom: 65px;
     }
-    50% {
-        bottom: 15px;
+    10% {
+        bottom: 55px;
+    }
+    60% {
+        bottom: 65px;
+    }
+    70% {
+        bottom: 55px;
     }
     100% {
-        bottom: 25px;
+        bottom: 65px;
     }
 }

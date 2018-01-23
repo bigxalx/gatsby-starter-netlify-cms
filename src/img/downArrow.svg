@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="27px" height="17px" viewBox="0 0 27 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Path 2</title>
+    <title>Shape</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-Copy-2" transform="translate(-498.000000, -493.000000)" stroke="#FFFFFF">
-            <path d="M499,508.844344 L510.703141,493.396197 L510.703141,493.396197 C511.036643,492.955976 511.663869,492.869462 512.104091,493.202963 C512.176966,493.258172 512.241926,493.323113 512.297155,493.395973 L524.030275,508.874619" id="Path-2" transform="translate(511.515138, 500.937310) scale(1, -1) translate(-511.515138, -500.937310) "></path>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-11" transform="translate(-497.000000, -442.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="Group-7" transform="translate(497.000000, 442.000000)">
+                <path d="M19.3242857,12.96 C18.8442857,12.48 18.0557143,12.48 17.6442857,12.96 L11.2671429,19.4057143 L11.2671429,1.2 C11.2671429,0.548571429 10.7185714,0 10.0671429,0 C9.41571429,0 8.86714286,0.548571429 8.86714286,1.2 L8.86714286,19.4057143 L2.49,12.96 C2.01,12.48 1.29,12.48 0.81,12.96 C0.33,13.44 0.33,14.16 0.81,14.64 L10.0671429,24 L19.3242857,14.5714286 C19.8042857,14.16 19.8042857,13.4057143 19.3242857,12.96 Z" id="Shape"></path>
+            </g>
         </g>
     </g>
 </svg>

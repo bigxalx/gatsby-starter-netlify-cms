@@ -1,10 +1,14 @@
 import React from 'react';
 import Content, { HTMLContent } from '../components/Content';
+import Navigation from '../components/NavigationWithLogo';
+import '../style/all.css';
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
-  return <section className="section section--gradient">
-    <div className="container">
+  return <div>
+    <Navigation />
+      <section className="section section--gradient">
+    <div>
       <div className="columns">
         <div className="column is-10 is-offset-1">
           <div className="section">
@@ -14,7 +18,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         </div>
       </div>
     </div>
-  </section>;
+  </section>
+  </div>;
 }
 
 export default ({ data }) => {
